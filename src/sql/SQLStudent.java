@@ -32,7 +32,7 @@ public class SQLStudent {
             Statement statement = connection.getConexion().createStatement();
             resultSet = statement.executeQuery(sql);
         } catch (SQLException ex) {
-            System.out.println("Error ejecutando al consulta.");
+            System.out.println("Error ejecutando al consulta: " + ex.getMessage());
         }
     }  
     
@@ -75,7 +75,7 @@ public class SQLStudent {
 
     //CARGAR EL RESULTSET CON LOS DATOS DE LA FILA SELECCIONADA
     public void studentToResultset(int registro){
-        executeQuery("select * from students where registro = "+registro);
+        executeQuery("select * from alumnos where registro = "+registro);
     }
     
     //PASAR AL SIGUIENTE REGISTRO DEL RESULTSET

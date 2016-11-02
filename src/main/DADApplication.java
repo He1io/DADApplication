@@ -1,6 +1,6 @@
 package main;
 
-import controller.Controller;
+import controller.MainController;
 
 /**
  *
@@ -9,7 +9,7 @@ import controller.Controller;
 public class DADApplication {
 
     public static void main(String[] args) {
-        Controller controller = new Controller();
+        MainController controller = new MainController();
     }
     
 }

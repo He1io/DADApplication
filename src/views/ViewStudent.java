@@ -1,6 +1,7 @@
 package views;
 
-import controller.Controller;
+import controller.MainController;
+import controller.StudentController;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JButton;
@@ -16,7 +17,7 @@ public class ViewStudent extends javax.swing.JFrame {
     ResultSet resultSet;
     Table table;
     
-    public ViewStudent(Controller controlador) throws SQLException {
+    public ViewStudent(StudentController controlador) throws SQLException {
         initComponents();
         table=new Table(controlador.getResultSet());
         tableStudent.setModel(table);

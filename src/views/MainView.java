@@ -5,7 +5,7 @@
  */
 package views;
 
-import controller.Controller;
+import controller.MainController;
 import javax.swing.JButton;
 
 /**
@@ -14,7 +14,7 @@ import javax.swing.JButton;
  */
 public class MainView extends javax.swing.JFrame {
 
-    public MainView(Controller controller) {
+    public MainView(MainController controller) {
         
         initComponents();        
         buttonStudents.addActionListener(controller);
