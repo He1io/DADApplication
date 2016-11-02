@@ -9,6 +9,6 @@ package main;
  *
  * @author Helio
  */
-public class Prueba {
+public class Prueba2 {
     
 }
