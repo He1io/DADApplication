@@ -1,8 +1,6 @@
 package views;
 
-import controller.MainController;
 import controller.StudentController;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JButton;
 import javax.swing.JTable;
@@ -14,7 +12,6 @@ import models.Table;
  */
 public class ViewStudent extends javax.swing.JFrame {
     //PROPIEDADES
-    ResultSet resultSet;
     Table table;
     
     public ViewStudent(StudentController controlador) throws SQLException {
@@ -265,14 +262,6 @@ public class ViewStudent extends javax.swing.JFrame {
     public void setTfName(JTextField tfNombre) {
         this.tfName = tfNombre;
     }    
-
-    public ResultSet getResultSet() {
-        return resultSet;
-    }
-
-    public void setResultSet(ResultSet resultSet) {
-        this.resultSet = resultSet;
-    }
 
     public JTable getTableStudent() {
         return tableStudent;
